@@ -1,5 +1,15 @@
 # AkkaStarting 
 
+This repository contains the sample code for my book, Introduction to AKKA. 
+
+* Ch 2 Creating PingPong Actors 
+* Ch 3 Actor Hierarchy
+* Ch 4 Let It Crash
+* Ch 5 Actor And State Machine
+* Ch 6 Router
+* Ch 7 Agent, Blocking, and Non-blocking
+* Ch 8 Clustering
+
 임백준의 아카 시작하기 예제 소스코드입니다. 
 
 * 2장 핑퐁액터 만들기 
