@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.study</groupId>
+  <artifactId>ch8-node2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>아카 시작하기 8장</name>
+  <description>임백준의 아카 시작하기 8장 - 클러스터링 노드 2</description>
+  
+  	<dependencies>
+  	
+  		<dependency>
+	        <groupId>com.typesafe.akka</groupId>
+	        <artifactId>akka-actor_2.11</artifactId>
+	        <version>2.3.9</version>
+        </dependency>
+        
+        <dependency>
+	        <groupId>com.typesafe.akka</groupId>
+	        <artifactId>akka-cluster_2.11</artifactId>
+	        <version>2.3.9</version>
+        </dependency>
+        
+    </dependencies>
+  
+</project>
