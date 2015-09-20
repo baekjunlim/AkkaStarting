@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.study</groupId>
+  <artifactId>akka-study-scala</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Akka study in Scala</name>
+  <description>Akka study in Scala</description>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-actor_2.11</artifactId>
+      <version>2.3.14</version>
+    </dependency>
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-testkit_2.11</artifactId>
+      <version>2.3.14</version>
+    </dependency>
+    <dependency>
+	  <groupId>org.scalatest</groupId>
+	  <artifactId>scalatest_2.11</artifactId>
+	  <version>2.2.5</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+    </dependency>
+    
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>compile</phase>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.7</version>
+		<configuration>
+          <skipTests>true</skipTests>
+        </configuration>
+      </plugin>
+
+	  <plugin>
+		<groupId>org.scalatest</groupId>
+		<artifactId>scalatest-maven-plugin</artifactId>
+		<version>1.0</version>
+		<configuration>
+			<reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+			<junitxml>.</junitxml>
+			<filereports>WDF TestSuite.txt</filereports>
+		</configuration>
+		<executions>
+			<execution>
+				<id>test</id>
+				<goals>
+					<goal>test</goal>
+				</goals>
+			</execution>
+		</executions>
+	  </plugin> 
+	</plugins> 
+  </build> 
+</project> 
